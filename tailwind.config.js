@@ -5,8 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Roboto', 'sans-serif'],
-        'body': ['Segoe UI', 'sans-serif']
+        'fonts': ['Roboto', 'Segoe-UI', 'sans-serif'],
       }
     },
     
