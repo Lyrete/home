@@ -2,18 +2,18 @@ import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-800 text-white">
+    <div className="absolute inset-0 justify-center min-h-screen bg-gray-800 text-white">
+      <div className="h-screen py-2 flex flex-col justify-between">
       <Head>
         <title>@lyrete</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
-
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <div className="container mx-auto justify-center text-center space-y-4">
           <h1 className="text-3xl md:text-7xl font-bold">Tommi Alajoki</h1>          
           <h2 className="text-xl md:text-l">Web Developer</h2>       
-          <hr className="w-80 my-4 border-2 justify-self-center mx-auto" />
+          <div className="divide-y flex border justify-self-center mx-auto max-w-lg bg-white" />
           <div id="logos" className="flex items-center justify-center mx-auto space-x-3">
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/lyrete">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-current text-gray-200 w-6 h-6 hover:text-yellow-500">
@@ -45,6 +45,7 @@ export default function Home() {
           <div className="self-start">Tommi Alajoki</div>
         </div>
       </footer>
+    </div>
     </div>
   )
 }
